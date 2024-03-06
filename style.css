@@ -1,0 +1,214 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    /*Cores*/
+
+    --cor-top-header: #FFFFFF;
+    --cor-down-header: #E00013;
+    --cor-text-litle: #333333;
+
+    /*Fontes*/
+    --font-grande: "Popins", sans-serif;
+    --font-media-pequena: "Baskervville"; 
+}
+body{
+    font-family: var(--font-media-pequena);
+}
+.container-header-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-top-list{
+    padding: 12px 11px 12px 12px;
+}
+.header-top-list > a{
+    text-decoration: none;
+    font-family: var(--font-grande);
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--cor-down-header);
+    margin-right: 20px;
+}
+.header-top-list > a:hover{
+    border-bottom: 2px solid var(--cor-down-header);
+}
+.login-header-top-list{
+    padding: 12px 11px 12px 12px;
+}
+.login-header-top-list > a{
+    text-decoration: none;
+    font-family: var(--font-grande);
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--cor-text-litle);
+    margin-right: 30px;
+}
+.login-header-top-list > a:hover{
+    color: var(--cor-down-header);
+    transition: .5s;
+}
+.login-header-top-list > a > i{
+    margin-right: 10px;
+    font-size: 16px;
+}
+header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-down-header);
+    padding: 22px 12px;
+}
+header h1{
+    font-family: var(--font-grande);
+    color: var(--cor-top-header);
+    font-weight: bold;
+    font-size: 30px;
+}
+header > a{
+    font-family: var(--font-grande);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--cor-top-header);
+}
+header > a > i{
+    margin-right: 10px;
+}
+.search{
+    position: relative;
+}
+.search i{
+    position: absolute;
+    top: 7px;
+    left: 115px;
+}
+#Txt{
+    background: #FFFFFF;
+    border: none;
+    padding: 8px 20px;
+    width: 100px;
+    border-radius: 5px;
+}
+input::placeholder{
+    font-family: var(--font-grande);
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--cor-text-litle);
+}
+main.article{
+    margin-left: 4.16667%;
+    margin-right: 4.16667%;
+}
+.container-img{
+    width: 100%;
+    margin-top: 1.5em;
+}
+.container-img img{
+    display: block;
+    margin: auto;
+    max-width: 1000px;
+    min-width: 320px;
+}
+.publicity{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.news{
+    margin: 1.5em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+.hall-news{
+    width: 60%;
+    padding: 30px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('imagens/borda-gelo.jpg');
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.hall-news:hover{
+    cursor: pointer;
+    background-position: center center;
+}
+.live{
+    margin-bottom: 30px;
+    background-color: var(--cor-down-header);
+    width: 15%;
+    text-align: center;
+    border-radius: 5px;
+    font-family: var(--font-grande);
+    color: var(--cor-top-header);
+    font-weight: bold;
+    font-size: 0.9vw;
+    padding: 2px;
+}
+.live:hover{
+    cursor: pointer;
+}
+.hall-news h2{
+    font-family: var(--font-grande);
+    font-weight: bolder;
+    color: var(--cor-top-header);
+    font-size: 35px;
+    padding-top: 90px;
+}
+.foot{
+    margin-top: 40px;
+    margin-left: 10px;
+    padding-top: 60px;
+    font-family: var(--font-grande);
+    color: var(--cor-top-header);
+    font-weight: bolder;
+    font-size: 14px;
+}
+.foot:hover{
+    cursor: pointer;
+}
+.secondary-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#ct1, #ct2{
+    background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('https://c.files.bbci.co.uk/1809E/production/_97826489_terraplana-1.jpg');
+    background-size: cover;
+    background-position: center center;
+    padding: 30px;
+    border-radius: 10px;
+    width: 30vw;
+    color: var(--cor-top-header);
+    font-family: var(--font-grande);
+    font-weight: bold;
+    opacity: 4.5;
+    cursor: pointer;
+}
+#ct1 h2, #ct2 h2{
+    padding-bottom: 30px;
+}
+#ct2{
+    background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('https://t2.tudocdn.net/323780?w=1920');
+    background-size: cover;
+    background-position: center center;
+}
+.container-news iframe{
+    border-radius: 10px;
+    width: 350px;
+    height: 300px;
+}
